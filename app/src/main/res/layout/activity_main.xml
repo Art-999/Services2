@@ -33,11 +33,12 @@
         android:text=""
         android:textSize="23sp"
         android:textStyle="bold" />
+
     <Button
         android:id="@+id/start_service_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="start service"
-        android:onClick="startButtonClick"/>
+        android:onClick="startButtonClick"
+        android:text="start service" />
 
 </LinearLayout>

@@ -55,13 +55,13 @@ public class MyService extends Service {
             super.run();
             try {
                 pendingIntent.send(MainActivity.KEY_STATUS_START);
-                Log.d("Art","worked");
+                Log.d("Art", "worked");
                 SystemClock.sleep(time);
 
-                Intent intent=new Intent();
-                for (int i = 1; i <=10 ; i++) {
-                    intent.putExtra("result",i);
-                    pendingIntent.send(MyService.this,MainActivity.KEY_STATUS_WORKING,intent);
+                Intent intent = new Intent();
+                for (int i = 1; i <= 10; i++) {
+                    intent.putExtra("result", i);
+                    pendingIntent.send(MyService.this, MainActivity.KEY_STATUS_WORKING, intent);
                     SystemClock.sleep(1000);
                 }
 

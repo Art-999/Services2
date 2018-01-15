@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    ////PendingIntent Example Service. Обратная связь с помощью PendingIntent
+    //PendingIntent Example Service. Обратная связь с помощью PendingIntent
     private Button startServiceBtn;
     private TextView showServiceResultTv1;
     private TextView showServiceResultTv2;
@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         showServiceResultTv2 = findViewById(R.id.show_service_result_tv2);
         showServiceResultTv3 = findViewById(R.id.show_service_result_tv3);
         startServiceBtn = findViewById(R.id.start_service_btn);
+
     }
 
     public void startButtonClick(View view) {
@@ -123,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
             switch (requestCode) {
                 case TASK1_REQUESTCODE:
                     showServiceResultTv1.setText("");
-                   // startServiceBtn.setEnabled(true);
+                    // startServiceBtn.setEnabled(true);
                     break;
                 case TASK2_REQUESTCODE:
                     showServiceResultTv2.setText("");
